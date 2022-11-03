@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>메인페이지</title>
+</head>
+<body>
+    <center>
+        <img src="https://img.hani.co.kr/imgdb/resize/2007/0828/118820142130_20070828.JPG" width="300", height="200" alt="no image">
+        <form action="/result" method="post" style="padding:5px;">
+            <div style="padding:5px;">
+                온도 : <input type="text" name="temp" size="1"> °C
+            </div>
+            <div style="padding:5px;">
+                습도 : <input type="text" name="hum" size="1"> %
+            </div>
+            <div style="padding:5px;">
+                풍속 : <input type="text" name="wind_speed" size="1"> m/s
+            </div>
+            <input type="submit" value ="예측" class="btn btn-primary">
+        </form>
+        <button onClick="location.reload();" class="btn btn-danger">다시 입력</button>
+        <button type="button" onclick="window.open('https://charts.mongodb.com/charts-section3-fglvb/public/dashboards/63622ce6-680d-4280-8ffb-9be1338302e2');" class="btn btn-info"> 대시보드 이동 </button>
+    </center>
+</body>
+</html>
